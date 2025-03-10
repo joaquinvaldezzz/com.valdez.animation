@@ -12,6 +12,6 @@
         android:fromDegrees="360"
         android:pivotX="50%"
         android:pivotY="50%"
-        android:startOffset="5000"
+        android:startOffset="1000"
         android:toDegrees="0" />
 </set>

@@ -36,53 +36,78 @@
         android:orientation="vertical"
         android:paddingHorizontal="16dp">
 
-        <Button
-            android:id="@+id/button_clockwise"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="rotateClockwise"
-            android:text="Clockwise"
-            tools:ignore="HardcodedText,VisualLintButtonSize" />
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button_counter"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="rotateCounterclockwise"
-            android:text="Counterclockwise"
-            tools:ignore="HardcodedText,VisualLintButtonSize" />
+            <Button
+                android:id="@+id/button_clockwise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="rotateClockwise"
+                android:text="Clockwise"
+                tools:ignore="HardcodedText,VisualLintButtonSize" />
 
-        <Button
-            android:id="@+id/button_zoom_in"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="zoomIn"
-            android:text="Zoom in"
-            tools:ignore="HardcodedText,VisualLintButtonSize" />
+            <Button
+                android:id="@+id/button_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="rotateCounterclockwise"
+                android:text="Counterclockwise"
+                tools:ignore="HardcodedText,VisualLintButtonSize" />
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/button_zoom_out"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="zoomOut"
-            android:text="Zoom out"
-            tools:ignore="HardcodedText,VisualLintButtonSize" />
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button_slide_left"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="slideLeft"
-            android:text="Slide left"
-            tools:ignore="HardcodedText,VisualLintButtonSize" />
+            <Button
+                android:id="@+id/button_zoom_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="zoomIn"
+                android:text="Zoom in"
+                tools:ignore="HardcodedText,VisualLintButtonSize" />
 
-        <Button
-            android:id="@+id/button_slide_right"
+            <Button
+                android:id="@+id/button_zoom_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="zoomOut"
+                android:text="Zoom out"
+                tools:ignore="HardcodedText,VisualLintButtonSize" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="slideRight"
-            android:text="Slide right"
-            tools:ignore="HardcodedText,VisualLintButtonSize" />
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_slide_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="slideLeft"
+                android:text="Slide left"
+                tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/button_slide_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="slideRight"
+                android:text="Slide right"
+                tools:ignore="HardcodedText,VisualLintButtonSize" />
+        </LinearLayout>
+
 
         <Button
             android:id="@+id/button_fade"

@@ -13,7 +13,7 @@ class MainActivity : ComponentActivity() {
         setContentView(R.layout.activity_design)
     }
 
-    fun rotate() {
+    fun rotate(view: View) {
         val image = findViewById<View>(R.id.image_dice)
         val animation = AnimationUtils.loadAnimation(applicationContext, R.anim.rotate)
 

@@ -39,6 +39,7 @@
             android:id="@+id/button_rotate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="rotate"
             android:text="Rotate"
             tools:ignore="HardcodedText,VisualLintButtonSize" />
 
@@ -76,6 +77,5 @@
             android:layout_height="wrap_content"
             android:text="Fade"
             tools:ignore="HardcodedText,VisualLintButtonSize" />
-
     </LinearLayout>
 </LinearLayout>

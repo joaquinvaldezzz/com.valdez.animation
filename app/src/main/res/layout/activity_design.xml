@@ -47,14 +47,15 @@
             android:id="@+id/button_zoom_in"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Zoom in"
             android:onClick="zoomIn"
+            android:text="Zoom in"
             tools:ignore="HardcodedText,VisualLintButtonSize" />
 
         <Button
             android:id="@+id/button_zoom_out"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="zoomOut"
             android:text="Zoom out"
             tools:ignore="HardcodedText,VisualLintButtonSize" />
 

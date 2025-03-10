@@ -26,4 +26,11 @@ class MainActivity : ComponentActivity() {
 
         image.startAnimation(animation)
     }
+
+    fun zoomOut(view: View) {
+        val image = findViewById<View>(R.id.image_dice)
+        val animation = AnimationUtils.loadAnimation(applicationContext, R.anim.zoom_out)
+
+        image.startAnimation(animation)
+    }
 }

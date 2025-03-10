@@ -55,4 +55,11 @@ class MainActivity : ComponentActivity() {
 
         image.startAnimation(animation)
     }
+
+    fun fade(view: View) {
+        val image = findViewById<View>(R.id.image_dice)
+        val animation = AnimationUtils.loadAnimation(applicationContext, R.anim.fade)
+
+        image.startAnimation(animation)
+    }
 }

@@ -87,6 +87,7 @@
             android:id="@+id/button_fade"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="fade"
             android:text="Fade"
             tools:ignore="HardcodedText,VisualLintButtonSize" />
     </LinearLayout>
